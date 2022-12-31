@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+@layer base{
+  button{
+    @apply text-xl bg-violet-600 text-white w-24 rounded-lg hover:opacity-80
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
